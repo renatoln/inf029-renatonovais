@@ -5,7 +5,7 @@ int main(){
 	int a, b, op = 1; 
 	double resultado;
 
-	while(op != 0){
+	for(;;){
 		printf("Digite o primeiro valor\n");
 		scanf("%d", &a);
 		printf("Digite o segundo valor\n");
@@ -44,6 +44,8 @@ int main(){
 			}
 			default: printf("Opção inválida\n");
 		}
+
+		if (op == 0) break;
 
 	}
 	
